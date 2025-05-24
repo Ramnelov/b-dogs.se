@@ -35,7 +35,7 @@ export default function RootLayout({
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            https://github.com/B-Dogs/b-dogs.se
+            https://github.com/Ramnelov/b-dogs.se
           </a>
         </footer>
       </body>
