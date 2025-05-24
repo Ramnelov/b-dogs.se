@@ -30,12 +30,12 @@ export default function RootLayout({
         {children}
         <footer className="fixed bottom-0 w-full text-center p-2 text-sm">
           <a
-            href="https://github.com/Ramnelov/b-dogs.se"
+            href="https://www.github.com/Ramnelov/b-dogs.se"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            https://github.com/Ramnelov/b-dogs.se
+            https://www.github.com/Ramnelov/b-dogs.se
           </a>
         </footer>
       </body>
