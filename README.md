@@ -1,5 +1,5 @@
-# B-Dogs
+# B-DOGS
 
-Never put B-Dog in a corner.
+NEVER PUT B-DOG IN A CORNER
 
 [b-dogs.se](https://www.b-dogs.se)
