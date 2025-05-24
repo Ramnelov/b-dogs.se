@@ -2,4 +2,4 @@
 
 NEVER PUT B-DOG IN A CORNER
 
-[b-dogs.se](https://www.b-dogs.se)
+[b-dogs.se](https://b-dogs.se)
