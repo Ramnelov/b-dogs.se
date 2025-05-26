@@ -29,7 +29,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #7e771f, #922121);
+  background: linear-gradient(45deg, #bab12e, #d33232);
   animation: pulsate 8s ease-in-out infinite;
 }
 
