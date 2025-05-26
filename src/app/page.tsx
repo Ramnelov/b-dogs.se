@@ -1,7 +1,15 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center">
-      <img src="logo.svg" alt="B-DOGS Logo" className="w-96 h-96 drop-shadow" />
+    <div className="flex justify-center min-h-screen">
+      <Image
+        src="/logo.svg"
+        alt="B-DOGS"
+        width={384}
+        height={384}
+        className="drop-shadow"
+      />
     </div>
   );
 }
