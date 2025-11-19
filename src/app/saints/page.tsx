@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { headers } from "next/headers";
 
 type Saint = {
   id: string;
@@ -9,12 +10,25 @@ type Saint = {
 };
 
 async function getSaints(): Promise<Saint[]> {
-  const response = await fetch("http://localhost:3000/saints.json", {
+  const h = headers();
+  const host = (await h).get("host");
+  const protocol =
+    (await h).get("x-forwarded-proto") ??
+    (process.env.NODE_ENV === "development" ? "http" : "https");
+
+  const url = `${protocol}://${host}/saints.json`;
+
+  const response = await fetch(url, {
     cache: "no-store",
   });
 
   if (!response.ok) {
-    throw new Error("Failed to fetch saints");
+    console.error(
+      "Failed to fetch saints",
+      response.status,
+      response.statusText,
+    );
+    throw new Error(`Failed to fetch saints: ${response.status}`);
   }
 
   return response.json();
